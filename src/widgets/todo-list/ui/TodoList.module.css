@@ -1,0 +1,183 @@
+.container {
+  width: 100%;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.userInfo {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.username {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.logoutButton {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+  border-radius: 0.375rem;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #fecaca;
+}
+
+.form {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-gray-300);
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.addButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.errorText {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-danger);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.filterButton {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-600);
+  transition: all 0.2s ease;
+}
+
+.filterButton:hover {
+  background-color: var(--color-gray-200);
+}
+
+.filterButtonActive {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todoItem {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.emptyMessage {
+  text-align: center;
+  color: var(--color-text-light);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.clearButton {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+}
+
+.clearButton:hover {
+  color: var(--color-text-dark);
+}
+
+.clearButton:focus {
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.todoCount {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+} 

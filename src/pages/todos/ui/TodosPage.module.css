@@ -1,0 +1,14 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contentContainer {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+} 
