@@ -3,6 +3,8 @@ description:
 globs: 
 alwaysApply: true
 ---
+Действуй как опытный Frontend developer
+
 # Реализация TypeScript
 
 *   Включите максимально строгий режим в `typescript`.

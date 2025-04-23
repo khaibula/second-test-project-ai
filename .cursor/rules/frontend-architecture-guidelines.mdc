@@ -3,6 +3,8 @@ description:
 globs: 
 alwaysApply: true
 ---
+Действуй как опытный Software architecture
+
 # Архитектура Фронтенд Приложений
 
 ## Feature-Sliced Design (FSD)
